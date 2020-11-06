@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Budgettravel</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Home" class="active">
+      <div class="landing__container">
+        <h2>Who are we ?</h2>
+        <p>We are travel advisor will help you to travel the world on budget. </p>
+        
+        <p>As long as alot of us want to discover the world and visit different places but our budget makes us thing it is impossible.
+          it is no longer a problem, now Budgettravel will helps makes your dreams come true.
+        </p>
+      </div>
+      <img src="ian-schneider-TamMbr4okv4-unsplash.jpg" alt="passion bring us here" height="300px" width="350px">
+    </section>
+    <section id="section2" data-nav="services">
+      <img src="christine-roy-ir5MHI6rPg0-unsplash.jpg" alt="travel planning image" height="300px" width="400px">
+      <div class="landing__container">
+        <h2>Services</h2>
+        <ul>
+          <li>We can help you in planning your vacation to the place you want to visit on your budget.
+          <li>Offering you number of places to speed your vacation in depend on your budget.
+          <li>Help you in booking your accomendation and flight tickets.
+          <li>Recommend to you local travel agencies to deal with them in your travel destination.
+          <li>Helping in preparing your visa paper.
+        </ul> 
+      </div>
+    </section>
+    <section id="section3" data-nav="Our Team">
+      <div class="landing__container">
+        <h2>Our Team</h2>
+        <p>Our Team now consist of one member the founder of this site and the owner of the idea she will be happy Helping You in planning your on budget vacation.</p>
+
+        <p>The site idea spark in her mind after spending alot of time searching to find the best accomendation fees to her relative to spend her vacation in, with her specifications (location,rate and so on).  </p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Contact">
+      <div class="landing__container">
+        <h2>Contact</h2>
+        <p>You can contact us through our facebook page.</p>
+        <a href="https://www.facebook.com/Budgettravel-101589657962929" target="_blank"><img src="iconfinder_1_Facebook_colored_svg_copy_5296499.svg" height="60px" width="60px" alt="facebook icon"></a>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
